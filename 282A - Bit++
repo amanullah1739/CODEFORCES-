@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int t;
+    cin >> t;
+    int x = 0;
+    while(t--){
+        string bit = "";
+        cin >> bit;
+        if(bit=="X++" | bit=="++X"){
+            x++;
+        }
+        if(bit=="X--" | bit=="--X"){
+            x--;
+        }
+        
+    }
+    cout << x;
+    
+}
