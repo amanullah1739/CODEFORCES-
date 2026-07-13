@@ -1,0 +1,66 @@
+#include <iostream>
+#include <cmath> // Required for abs()
+
+using namespace std;
+
+int main() {
+    int val;
+    int moves = 0;
+
+    // Scan the 5x5 matrix
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            cin >> val;
+            if (val == 1) {
+                // Calculate distance from center (2, 2)
+                moves = abs(i - 2) + abs(j - 2);
+            }
+        }
+    }
+
+    cout << moves << endl;
+    return 0;
+}
+Use code with caution.Why this is better:No Extra Storage: Eliminates the need to allocate memory for a 5 × 5 array.Time Complexity: Runs in \(\mathcal{O}(1)\) auxiliary space and a single pass.Mathematical Accuracy: Instantly calculates the absolute differences between the current position (i, j) and the target center position (2, 2).If you are prepping for coding contests, let me know if you want to look at similar grid-traversal problems or need help optimizing your input/output speed for competitive programming!Show Code1 siteInsertion Sort Algorithm - GeeksforGeeksInsertion sort is a simple sorting algorithm that works by iteratively inserting each element of an unsorted list into its correct...GeeksforGeeksYou said: fix my code and dont use absThe corrected version of your code fixes the logical errors while preserving your original nested loop structure and manually calculating the distance without using abs().Fixed Codecpp#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[5][5] = {};
+    int count = 0;
+    
+    // Read the matrix input
+    for(int i = 0; i < 5; i++) {
+        for(int j = 0; j < 5; j++) {
+            cin >> arr[i][j];
+        }
+    }
+    
+    // Find the '1' and calculate moves
+    for(int i = 0; i < 5; i++) {
+        for(int j = 0; j < 5; j++) {
+            if(arr[i][j] == 1) {
+                
+                // Row distance (Target is row 2)
+                if(i > 2) {
+                    count += (i - 2);
+                } else {
+                    count += (2 - i);
+                }
+               
+                // Column distance (Target is column 2)
+                if(j > 2) {
+                    count += (j - 2);
+                } else {
+                    count += (2 - j);
+                }
+                
+                // Found the 1, no need to look further
+                break; 
+            }
+        }
+    }
+    
+    // Print the final count exactly as it is
+    cout << count << endl;
+    return 0;
+}
