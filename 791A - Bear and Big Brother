@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int bob, limak;
+    cin >> limak;
+    cin >> bob;
+    int count = 0;
+    
+    while(limak<bob){
+        limak = 3*limak;
+        bob = 2*bob;
+        count++;
+    }
+    cout << count;
+    return 0;
+}
