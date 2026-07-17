@@ -1,0 +1,28 @@
+// https://codeforces.com/problemset/problem/734/A
+#include <iostream>
+#include <unordered_map>
+using namespace std;
+int main(){
+    unordered_map<char,int> hash;
+    int size;
+    cin >> size;
+    string s;
+    cin >> s;
+    for(char ch : s){
+        hash[ch]++;
+    }
+    
+    
+    // cout << hash['A'];
+    // cout << hash['D'];
+    if(hash['A'] == hash['D']){
+        cout << "Friendship";
+    }
+    else if(hash['A'] > hash['D']){
+        cout << "Anton";
+    }
+    else{
+        cout << "Danik";
+    }
+    return 0;
+}
