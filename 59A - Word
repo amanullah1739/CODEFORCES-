@@ -1,0 +1,36 @@
+#include <iostream>
+#include <cctype>
+#include <string>
+using namespace std;
+int main(){
+    string s;
+    cin >> s;
+    int len = s.length();
+    int upperCase = 0;
+    int lowerCase = 0;
+    for(char ch : s){
+        if(isupper(static_cast<unsigned char>(ch))){
+            upperCase++;
+            
+        }
+        else if(islower(static_cast<unsigned char>(ch))){
+            lowerCase++;
+        }
+    }
+
+    string result = "";
+    if(lowerCase >= (len+1)/2){
+        for(char ch : s){
+            result += tolower(static_cast<unsigned char> (ch));
+        }
+    }else{
+        for(char ch : s){
+            result += toupper(static_cast<unsigned char>(ch));
+        }
+    }
+    
+    cout << result;
+    
+    return 0;
+    
+}
