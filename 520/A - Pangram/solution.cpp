@@ -1,12 +1,13 @@
+// ..........
 #include <iostream>
 #include <unordered_set>
 using namespace std;
 int main(){
     unordered_set<char> charecter;
-    int x;
-    cin >>x;
+    int n;
+    cin >>n;
     string s = "";
-    for(int i=0; i<x; i++){
+    for(int i=0; i<n; i++){
         char ch;
         cin >> ch;
         if(ch >= 'A' && ch <= 'Z'){
