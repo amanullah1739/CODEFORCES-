@@ -6,13 +6,13 @@
 
 | Total Problems | Topics |
 |---|---|
-| 1 | 2 |
+| 2 | 2 |
 
 ---
 
 ## 📂 Topic-Wise Problems
 
-- [implementation](#implementation) (1)
+- [implementation](#implementation) (2)
 - [strings](#strings) (1)
 
 ---
@@ -22,6 +22,7 @@
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 520A | [Pangram](https://codeforces.com/contest/520/problem/A) | 800 | [C++20 (GCC 13-64)](https://github.com/amanullah1739/CODEFORCES-/blob/HEAD/520/A%20-%20Pangram/solution.cpp) |
+| 677A | [Vanya and Fence](https://codeforces.com/contest/677/problem/A) | 800 | [C++20 (GCC 13-64)](https://github.com/amanullah1739/CODEFORCES-/blob/HEAD/677/A%20-%20Vanya%20and%20Fence/solution.cpp) |
 
 ### strings
 
