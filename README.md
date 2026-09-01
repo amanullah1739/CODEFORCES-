@@ -6,13 +6,14 @@
 
 | Total Problems | Topics |
 |---|---|
-| 3 | 2 |
+| 4 | 3 |
 
 ---
 
 ## 📂 Topic-Wise Problems
 
 - [implementation](#implementation) (3)
+- [math](#math) (1)
 - [strings](#strings) (1)
 
 ---
@@ -24,6 +25,12 @@
 | 344A | [Magnets](https://codeforces.com/contest/344/problem/A) | 800 | [C++20 (GCC 13-64)](https://github.com/amanullah1739/CODEFORCES-/blob/HEAD/344/A%20-%20Magnets/solution.cpp) |
 | 520A | [Pangram](https://codeforces.com/contest/520/problem/A) | 800 | [C++20 (GCC 13-64)](https://github.com/amanullah1739/CODEFORCES-/blob/HEAD/520/A%20-%20Pangram/solution.cpp) |
 | 677A | [Vanya and Fence](https://codeforces.com/contest/677/problem/A) | 800 | [C++20 (GCC 13-64)](https://github.com/amanullah1739/CODEFORCES-/blob/HEAD/677/A%20-%20Vanya%20and%20Fence/solution.cpp) |
+
+### math
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 318A | [Even Odds](https://codeforces.com/contest/318/problem/A) | 900 | [C++20 (GCC 13-64)](https://github.com/amanullah1739/CODEFORCES-/blob/HEAD/318/A%20-%20Even%20Odds/solution.cpp) |
 
 ### strings
 
